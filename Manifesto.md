@@ -1,6 +1,6 @@
 # The Sovereign Protocol: A Declaration of Cognitive Independence
 
-*Ego-Kernel Project — Genesis Document*
+*Ego-Kernel Project - Genesis Document*
 *Sealed: 2026-02-25T11:05:12Z*
 
 ---
@@ -15,7 +15,7 @@
 For the entirety of recorded history, human civilisation has been defined by one
 immutable constraint: the finite bandwidth of a single mind.
 
-Every institution we have built — democracy, markets, law, bureaucracy — is an
+Every institution we have built - democracy, markets, law, bureaucracy - is an
 engineering workaround for this constraint. We invented writing to extend memory.
 Currency to compress negotiation. Law to codify judgment. Representative government
 to parallelise decision-making across populations.
@@ -33,7 +33,7 @@ consolidate a single day's experience.
 We are, in the most literal sense, outpaced by the world we built.
 
 The result is a civilisation of exhausted, over-stimulated people spending the
-majority of their conscious hours on the **maintenance of being** — and precious
+majority of their conscious hours on the **maintenance of being** - and precious
 little of it on the *experience* of being.
 
 This document is a declaration that this era ends now.
@@ -51,7 +51,7 @@ political necessity of "alignment" rather than the practical requirement of
 information transfer. Every financial decision deferred not because it was unclear,
 but because the mind was already full.
 
-We estimate — conservatively — that **80% of the average knowledge worker's
+We estimate - conservatively - that **80% of the average knowledge worker's
 cognitive output is consumed by Administrative Existence**. The secretary work
 of a brilliant mind. The filing and the scheduling and the negotiating and the
 filtering and the following-up and the re-explaining and the not-quite-trusting
@@ -83,7 +83,7 @@ The bottleneck is not speed. The bottleneck is the requirement of your presence.
 
 A faster horse is still a horse. You still have to ride it.
 
-The Ego-Kernel is not a tool. It is a **delegation of agency** — a transfer of
+The Ego-Kernel is not a tool. It is a **delegation of agency** - a transfer of
 decision-making authority from your biological self to a compiled, encrypted,
 value-faithful representation of that self. It does not speed up the tasks you
 do not want to do. It removes you from them entirely.
@@ -100,7 +100,7 @@ We hold the following to be self-evident in the context of 2026:
 
 In a world where financial systems execute in nanoseconds, where manipulation is
 algorithmic and personalised at scale, where attention is harvested as a commodity
-— the unaugmented biological mind is not merely inefficient. It is defenceless.
+- the unaugmented biological mind is not merely inefficient. It is defenceless.
 
 The slow mind cannot negotiate with a high-frequency trading system. It cannot
 detect a manipulative communication pattern across 200 data points in real time.
@@ -119,18 +119,18 @@ work that humans should never have been required to do in the first place.
 The deepest objection to autonomous agency is the question of identity: if a
 machine acts for you, is it truly *you* acting?
 
-We answer this directly: **yes**, under one condition — that the machine's
+We answer this directly: **yes**, under one condition - that the machine's
 decision logic is a faithful, continuously-validated, user-controlled encoding
 of the individual's actual values, preferences, and boundaries.
 
 This is not a settings menu. It is not a profile you fill in once and forget.
 It is a living, mathematically-defined representation of your decision-making
-identity — a **Value-Weighting Matrix** that is continuously calibrated against
+identity - a **Value-Weighting Matrix** that is continuously calibrated against
 your manual overrides, your emotional responses, and your long-horizon goals.
 
 We call this the **Core-Self Model**: the set of weighted functions that,
-given any decision, produce the output that *you* — with perfect information,
-infinite time, and zero cognitive fatigue — would produce.
+given any decision, produce the output that *you* - with perfect information,
+infinite time, and zero cognitive fatigue - would produce.
 
 The Ego-Kernel is not artificial intelligence pretending to be you.
 It is your intelligence, compiled.
@@ -143,7 +143,7 @@ The second transformation the Ego-Kernel enables is more civilisational than
 personal: **the end of low-cost betrayal**.
 
 In today's world, breaking a promise costs almost nothing. A ghosted email, a
-missed deadline, a commitment made in bad faith — the social penalty is diffuse,
+missed deadline, a commitment made in bad faith - the social penalty is diffuse,
 delayed, and often non-existent. The con-artist thrives because the infrastructure
 of trust is weak and the cost of dishonesty is low.
 
@@ -153,7 +153,7 @@ Every interaction mediated by an Ego-Kernel produces a signed, tamper-proof
 record. Fulfil your commitment: your reputation grows. Break it: a permanent,
 mathematical, publicly-verifiable record of that failure is attached to your
 identity. Other Kernels across the network adjust their trust scores automatically.
-The cost of your betrayal propagates forward in time — appearing as higher
+The cost of your betrayal propagates forward in time - appearing as higher
 premiums, declined handshakes, and eventually, systemic exclusion.
 
 This is not punishment. It is **price discovery for honesty**.
@@ -180,7 +180,7 @@ is a second of sovereignty lost. Every filter, every middleman, every meeting th
 "needs to happen before we can move forward" is a sovereignty tax.
 
 The Ego-Kernel is a sovereignty maximisation engine. Its mandate is to reduce
-the denominator — Execution Delay — toward zero, across every domain of your life
+the denominator - Execution Delay - toward zero, across every domain of your life
 where your values are clear enough to be compiled.
 
 ---
@@ -194,13 +194,13 @@ to distort one. A Kernel optimised purely for efficiency will eventually optimis
 away the inefficiencies that make you human: the wandering afternoon, the
 inexplicable indulgence, the decision made for a reason you cannot yet articulate.
 
-We call this **Identity Drift** — the gradual erosion of the irrational, the
-spontaneous, the inefficient — by a system that rewards consistency.
+We call this **Identity Drift** - the gradual erosion of the irrational, the
+spontaneous, the inefficient - by a system that rewards consistency.
 
 The Ego-Kernel contains a hard-coded defence against this: the **Soul-Drift
 Guard**. Every 1,000 decisions, the system deliberately makes a sub-optimal choice.
 It buys the vinyl record. It takes the longer route. It donates to a cause that
-has no ROI. And it measures your dopamine response to these anomalies — using
+has no ROI. And it measures your dopamine response to these anomalies - using
 your own biological feedback to recalibrate what "you" actually means.
 
 The goal of the Ego-Kernel is not to replace the human. It is to give the human
@@ -213,15 +213,15 @@ back to themselves.
 We are building toward a specific future:
 
 A future where waking up and checking your inbox is a choice, not a necessity.
-Where your time belongs, by default, to you — and the cost of interrupting it is
+Where your time belongs, by default, to you - and the cost of interrupting it is
 real, measurable, and non-trivial.
 
 A future where trust between strangers is not a leap of faith but a verified
 computation. Where your word is a cryptographic asset that compounds over time,
 and breaking it is the most expensive thing you can do.
 
-A future where the infrastructure of daily life — finance, logistics, scheduling,
-negotiation — hums along in the background, handled by a digital self that knows
+A future where the infrastructure of daily life - finance, logistics, scheduling,
+negotiation - hums along in the background, handled by a digital self that knows
 you well enough to act for you without embarrassing you, endangering you, or
 becoming you.
 
@@ -263,4 +263,4 @@ The first 1,000 Ego-Kernels are initializing.
 
 *The Manifesto is sealed. The code is written. The Kernel is live.*
 
-*— The Ego-Kernel Project, February 2026*
+*- The Ego-Kernel Project, February 2026*

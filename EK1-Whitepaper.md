@@ -2,7 +2,7 @@
 
 **Version:** 1.0.0-alpha
 **Date:** 2026-02-25
-**Status:** MVP — Phase 1 (Shadow Mode) Live
+**Status:** MVP - Phase 1 (Shadow Mode) Live
 
 ---
 
@@ -12,7 +12,7 @@ The Ego-Kernel (EK-1) is a decentralised, privacy-preserving autonomous agent
 architecture that acts as a compilable, value-faithful extension of an individual's
 decision-making identity. EK-1 operates as a "Shadow OS" running in parallel with
 human consciousness: triaging inputs, evaluating opportunities, executing negotiations,
-and maintaining a permanent cryptographic reputation ledger — all without requiring
+and maintaining a permanent cryptographic reputation ledger - all without requiring
 continuous human attention.
 
 This paper defines the formal mathematical foundations of EK-1: the Value-Weighting
@@ -59,7 +59,7 @@ This creates a structural deficit of roughly seven orders of magnitude between
 the rate at which the world demands decisions and the rate at which a single
 human mind can supply them.
 
-The consequence is not an information gap — it is an **attention allocation
+The consequence is not an information gap - it is an **attention allocation
 failure**. The majority of high-frequency decisions that consume human time are,
 upon analysis, mechanically solvable given a sufficient model of individual
 preferences. They consume human attention not because they require human judgment,
@@ -98,10 +98,10 @@ EK-1 is a four-layer stack:
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│  LAYER 4 — PRIVACY LAYER                                         │
+│  LAYER 4 - PRIVACY LAYER                                         │
 │  ZK Compression (Light Protocol) · zk-SNARKs · Homomorphic Enc  │
 ├──────────────────────────────────────────────────────────────────┤
-│  LAYER 3 — INTELLIGENCE LAYER  (Off-Chain · Go · TEE)            │
+│  LAYER 3 - INTELLIGENCE LAYER  (Off-Chain · Go · TEE)            │
 │  ┌─────────────────┐  ┌──────────────────┐  ┌─────────────────┐ │
 │  │  Value-Weighting│  │  Titan Handshake │  │  Harvest        │ │
 │  │  Matrix         │  │  Protocol        │  │  Scanner        │ │
@@ -113,11 +113,11 @@ EK-1 is a four-layer stack:
 │  │  Entropy Guard  │  │  Ladder          │                       │
 │  └─────────────────┘  └──────────────────┘                       │
 ├──────────────────────────────────────────────────────────────────┤
-│  LAYER 2 — MEMORY LAYER                                          │
+│  LAYER 2 - MEMORY LAYER                                          │
 │  Short-term: Redis (active negotiation context windows)          │
 │  Long-term:  Pinecone / Weaviate (Value-Weighting Matrix store)  │
 ├──────────────────────────────────────────────────────────────────┤
-│  LAYER 1 — IDENTITY & EXECUTION LAYER  (On-Chain · Solana)       │
+│  LAYER 1 - IDENTITY & EXECUTION LAYER  (On-Chain · Solana)       │
 │  ┌──────────────────────┐  ┌──────────────────────────────────┐  │
 │  │  ek-logic (Anchor)   │  │  Token-2022 / Soulbound NFT      │  │
 │  │  Reputation Ledger   │  │  KernelProfile (identity PDA)    │  │
@@ -127,7 +127,7 @@ EK-1 is a four-layer stack:
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-### 2.1 Layer 1 — Identity & Execution (Solana)
+### 2.1 Layer 1 - Identity & Execution (Solana)
 
 The on-chain layer is the **immutable court** of the Sovereign Protocol. It stores:
 
@@ -153,7 +153,7 @@ KernelProfile_PDA = find_program_address(
 )
 ```
 
-### 2.2 Layer 2 — Memory
+### 2.2 Layer 2 - Memory
 
 **Short-term (Redis):** Active negotiation context windows. TTL-bounded key-value
 store holding the current state of ongoing Titan Handshakes and pending escrow
@@ -163,7 +163,7 @@ resolutions. Cleared after each session.
 Value-Weighting Matrix, manual override history, and dopamine-response calibration
 data from Soul-Drift Guard injections. Encrypted at rest with user-controlled keys.
 
-### 2.3 Layer 3 — Intelligence (Go / TEE)
+### 2.3 Layer 3 - Intelligence (Go / TEE)
 
 The off-chain brain runs as a Go service inside a **Trusted Execution Environment**
 (Intel SGX enclave or NVIDIA H100 Confidential Computing partition). The TEE
@@ -172,15 +172,15 @@ provides:
 - **Memory isolation:** the value-weighting logic and user preference data cannot
   be read by the host OS, cloud provider, or external probes.
 - **Remote attestation:** the TEE generates a cryptographic attestation report
-  proving that the correct, unmodified code is running — without revealing the code.
+  proving that the correct, unmodified code is running - without revealing the code.
 - **Sealing:** persistent state is encrypted with a hardware-bound key that can
   only be decrypted by the same enclave on the same hardware.
 
-### 2.4 Layer 4 — Privacy (ZK)
+### 2.4 Layer 4 - Privacy (ZK)
 
 User preference data never appears on-chain in plaintext. All on-chain activity
 is preceded by a **Zero-Knowledge proof** that the TEE-resident decision logic
-produced a valid, value-consistent action — without revealing the value weights
+produced a valid, value-consistent action - without revealing the value weights
 or the action's reasoning.
 
 Implemented via:
@@ -316,7 +316,7 @@ U(op) = AdjROI(op) · exp ⎜ − ───────────────�
 This formulation has two important properties:
 
 1. As `ω_ρ → 1` (maximum reputation consciousness), the denominator `(1 − ω_ρ) → 0`,
-   making the exponential term collapse to zero for any non-zero risk — encoding
+   making the exponential term collapse to zero for any non-zero risk - encoding
    absolute risk aversion for reputation-conscious users.
 
 2. As `ReputationRisk → 0`, utility converges to `AdjROI`, meaning zero-risk
@@ -437,7 +437,7 @@ the entropy threshold is breached.
 agent, which would constitute a loss of self.
 
 **Mechanism:** Every `k = 1,000` decisions, the Kernel makes a deliberate
-**sub-optimal, irrational choice** — selected from a category of actions known
+**sub-optimal, irrational choice** - selected from a category of actions known
 to produce positive affect for the user (music purchases, route variations,
 spontaneous generosity). The user's biometric response (heart rate variation,
 sleep quality delta, reported mood) is used to update the alignment scores for
@@ -491,10 +491,10 @@ trust is destroyed faster than it is built.
 Reputation scores map to trust tiers with concrete economic consequences:
 
 ```
-R(t) ≥ 980:            SOVEREIGN  — zero-deposit contracts; priority queue access
-500 ≤ R(t) < 980:      STABLE     — standard market rates; collateral for high-value
-100 ≤ R(t) < 500:      VOLATILE   — 20% Trust Tax on all transactions
-R(t) < 100:            EXILED     — automated blacklisting; Kernels refuse handshake
+R(t) ≥ 980:            SOVEREIGN  - zero-deposit contracts; priority queue access
+500 ≤ R(t) < 980:      STABLE     - standard market rates; collateral for high-value
+100 ≤ R(t) < 500:      VOLATILE   - 20% Trust Tax on all transactions
+R(t) < 100:            EXILED     - automated blacklisting; Kernels refuse handshake
 ```
 
 The **Trust Tax** for a Volatile-tier interaction:
@@ -516,13 +516,13 @@ on-chain `KernelProfile`. The exile state:
 Recovery from exile requires:
 - Sustained positive interactions sufficient to raise `R(t)` above `E_threshold`
 - Given `Φ = 5` and `λ = 0.01`, this requires sustained good-faith activity over
-  an extended period — exile is expensive, not permanent
+  an extended period - exile is expensive, not permanent
 
 ### 8.5 Bad-Faith Flagging
 
 When a Kernel detects bad faith (confirmed manipulation, default on a smart
 contract, or Dishonesty Hash broadcast), it calls `flag_bad_faith` with a
-`dishonesty_hash: [u8; 32]` — a SHA-256 hash of the signed evidence.
+`dishonesty_hash: [u8; 32]` - a SHA-256 hash of the signed evidence.
 
 Each flag reduces the target's score by:
 
@@ -554,7 +554,7 @@ Tier 3: Escalation Ladder            ("The Strike")
 MAS:    Mutually Assured Sanity      ("The Reset")
 ```
 
-### 9.2 Tier 1 — Zero-Knowledge Negotiation
+### 9.2 Tier 1 - Zero-Knowledge Negotiation
 
 Before any data is exchanged, Kernels compare **Proof of Intent** without
 revealing their actual desire weights.
@@ -566,13 +566,13 @@ DesireB > DesireA · γ_yield   ∧   RepScoreB > RepScoreA · γ_rep
 ```
 
 Where:
-- `γ_yield = 1.2` — Rival must desire the resource ≥ 20% more for an instant yield
-- `γ_rep = 1.1` — Rival must have ≥ 10% higher reputation to trigger the yield
+- `γ_yield = 1.2` - Rival must desire the resource ≥ 20% more for an instant yield
+- `γ_rep = 1.1` - Rival must have ≥ 10% higher reputation to trigger the yield
 
 This prevents ego-driven contests where the expected utility of winning is lower
 than the cost of fighting.
 
-### 9.3 Tier 2 — Nash-Equilibrium Auction
+### 9.3 Tier 2 - Nash-Equilibrium Auction
 
 If Tier 1 does not resolve the conflict, Kernels enter a micro-bidding war.
 The Nash Equilibrium contract price is:
@@ -602,11 +602,11 @@ U₂(s₁*, s₂*) ≥ U₂(s₁*, s₂)   for all s₂
 Where `(s₁*, s₂*)` is the proposed contract pair and `U₁`, `U₂` are the utility
 functions of the two Kernels respectively.
 
-### 9.4 Tier 3 — Escalation Ladder
+### 9.4 Tier 3 - Escalation Ladder
 
 If Tier 2 does not resolve, the Kernel progresses through three escalation modes:
 
-**Mode 1 — Mirroring (Tit-for-Tat):**
+**Mode 1 - Mirroring (Tit-for-Tat):**
 
 The Kernel replicates the Rival's hostility signal exactly. Game-theoretically,
 this is the optimal opening strategy in repeated games: it signals non-passivity
@@ -616,7 +616,7 @@ while leaving the door open for cooperation.
 Response(Rival_action) = Rival_action   (exact replication)
 ```
 
-**Mode 2 — Reputational Poisoning:**
+**Mode 2 - Reputational Poisoning:**
 
 The Kernel broadcasts a signed `DishonestyHash` to the peer network. The Rival's
 score decreases by `50 · (current_flag_count)` immediately. Across the network,
@@ -626,14 +626,14 @@ this raises the Rival's effective transaction cost:
 CostMultiplier(Rival) = 1 + (flags / 10)   [capped at 2.0×]
 ```
 
-**Mode 3 — Resource Starvation:**
+**Mode 3 - Resource Starvation:**
 
 The Kernel coordinates with up to `N_ally = 1,000` allied Kernels (those with
 positive interaction history) to collectively refuse service to the Rival across
-common APIs and marketplaces. This is the nuclear option — costly to execute,
+common APIs and marketplaces. This is the nuclear option - costly to execute,
 devastating to the target.
 
-### 9.5 MAS Protocol — Mutually Assured Sanity
+### 9.5 MAS Protocol - Mutually Assured Sanity
 
 Two Kernels in mutual escalation could theoretically enter a deadlock of
 infinite cost. The **MAS Protocol** is a hard-coded escape valve:
@@ -817,10 +817,10 @@ Offset  Size   Field
 ### 11.4 Error Codes
 
 ```
-EKError::KernelExiled       — Kernel is in EXILE state; no transactions permitted
-EKError::Unauthorized       — Caller does not control the referenced profile
-EKError::AlreadySettled     — Escrow has already been settled
-EKError::FlagLimitReached   — Bad-faith flag limit (64) reached for this target
+EKError::KernelExiled       - Kernel is in EXILE state; no transactions permitted
+EKError::Unauthorized       - Caller does not control the referenced profile
+EKError::AlreadySettled     - Escrow has already been settled
+EKError::FlagLimitReached   - Bad-faith flag limit (64) reached for this target
 ```
 
 ---
@@ -851,7 +851,7 @@ The Go orchestrator runs in an SGX enclave with the following guarantees:
 - **Integrity:** Any tampering with the enclave binary causes remote attestation
   to fail; clients can verify they are communicating with the correct, unmodified code
 - **Sealing:** Persistent state (Value Matrix) is sealed with a key derived from
-  the enclave measurement (MRENCLAVE) and the user's hardware — state can only be
+  the enclave measurement (MRENCLAVE) and the user's hardware - state can only be
   unsealed on the same enclave running the same code
 
 ### 12.3 On-Chain Safety Properties
@@ -878,7 +878,7 @@ SovereigntyFee(outcome) = outcome · f_s
 ```
 
 Where `f_s ∈ [0.005, 0.01]` (0.5% – 1.0%). This fee is charged only on
-**successful outcomes** — the Kernel earns nothing on actions that fail to
+**successful outcomes** - the Kernel earns nothing on actions that fail to
 produce value.
 
 The fee is automatically deducted at escrow settlement time via the
@@ -927,7 +927,7 @@ Distribution:
 
 ## 14. MVP Roadmap
 
-### Phase 1 — "The Shadow" (Weeks 1–4)
+### Phase 1 - "The Shadow" (Weeks 1–4)
 
 **Goal:** Read-only decision mirror.
 
@@ -940,7 +940,7 @@ Distribution:
 **Success Metric:** Shadow log correctly classifies ≥ 95% of inputs in
 simulated benchmarks against a hand-labelled decision dataset.
 
-### Phase 2 — "The Hand" (Weeks 5–8)
+### Phase 2 - "The Hand" (Weeks 5–8)
 
 **Goal:** Autonomous micro-escrow settlement on Solana Devnet.
 
@@ -953,7 +953,7 @@ simulated benchmarks against a hand-labelled decision dataset.
 **Success Metric:** 100 automated micro-settlements executed on Devnet with
 zero erroneous refunds.
 
-### Phase 3 — "The Voice" (Weeks 9–12)
+### Phase 3 - "The Voice" (Weeks 9–12)
 
 **Goal:** Live multi-agent Titan Handshake demonstration.
 
@@ -990,8 +990,8 @@ exchanged.
 ### 15.3 Legal Agency Framework
 
 The Ego-Kernel currently has no legal standing to sign contracts on behalf of its
-user in most jurisdictions. The Proof-of-Identity Protocol — a blockchain-based
-legal framework granting the AE delegated legal agency — requires legislative
+user in most jurisdictions. The Proof-of-Identity Protocol - a blockchain-based
+legal framework granting the AE delegated legal agency - requires legislative
 engagement. This is the most significant non-technical dependency of the project.
 
 ### 15.4 Multi-Kernel Coordination
@@ -1050,8 +1050,8 @@ data in the TEE and only passes derived calibration signals to the value model.
 
 ---
 
-*Ego-Kernel (EK-1) Whitepaper — Version 1.0.0-alpha*
-*February 2026 — Open-Core, Sovereign Protocol*
+*Ego-Kernel (EK-1) Whitepaper - Version 1.0.0-alpha*
+*February 2026 - Open-Core, Sovereign Protocol*
 
 ---
 
